@@ -1,3 +1,14 @@
+'''
+HIT137 - Assignment 2 - Task 1
+Encrypt / Decrypt in Python
+
+What is does:
+    - Reads raw_text.txt and encrypts the text character by character according to the assignment instructions
+    - Decrypted text goes in encrypted_text.txt
+    - Then decrypts the text by reversing the encryption process, storing the text in decrypted_text.txt
+    - Both files, raw and decyrypted get compared character by character to check if they are the same to validate that the program is working
+'''
+
 import os
 
 def encrypt(shift1, shift2):
@@ -124,5 +135,6 @@ shift2 = input("Enter value 2: ")
 encrypt(shift1, shift2)
 decrypt(shift1, shift2)
 verify()
+
 
     
